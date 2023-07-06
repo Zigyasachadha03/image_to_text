@@ -19,43 +19,30 @@ The Image-to-text Recognition project aims to convert textual information from i
 To set up the Image-to-text Recognition project locally, follow these steps:
 
 1. Clone the repository:
-" $ git clone https://github.com/your-username/Image-to-text-recognition.git "
+` $ git clone https://github.com/your-username/Image-to-text-recognition.git `
 
 2. Install the required dependencies:
 
-'''
+```
 $ cd Image-to-text-recognition
 $ npm install
-'''
+```
 
 3. Configure the project:
 - Update any required settings or configurations in the project.
 - Make sure pytesseract OCR engine is properly installed and configured.
 
 4. Start the server:
-' $ node index.js '
+` $ node index.js `
 
 5. Access the application:
-Open your web browser and visit `http://localhost:3000` to access the Image-to-text Recognition application.
+Open your web browser and visit `http://localhost:5000` to access the Image-to-text Recognition application.
 
 ## Usage
 
 1. Upload an image containing text to the application.
 2. The application will use OCR to extract the text from the image.
 3. The extracted text will be displayed on the webpage or in the output file, depending on your project configuration.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to the Image-to-text Recognition project, please follow these guidelines:
-- Fork the repository
-- Create a new branch for your feature or bug fix
-- Commit your changes with descriptive commit messages
-- Push your changes to your forked repository
-- Open a pull request, explaining the changes you made
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
