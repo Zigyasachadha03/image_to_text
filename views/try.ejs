@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extract Text From Image</title>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- External CSS Link -->
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <section class="p-5 text-center bg-light">
+    <div class="container">
+      <h1>Convert Image To Text</h1>
+      <p class="small my-2">If you want to find out how to turn an image into a text document, you came to the right place.<br>This free online tool allows you to convert from image to text.</p>
+      <div id="upload-container">
+        <form action="/extracttextfromimage" method="post" enctype="multipart/form-data">
+          <fieldset class="upload_dropZone text-center mb-3 p-4">
+            <legend class="visually-hidden">Image uploader</legend>
+            <svg class="upload_svg" width="60" height="60" aria-hidden="true">
+              <use href="#icon-imageUpload"></use>
+            </svg>
+            <p class="small my-2">Drag &amp; Drop background image(s) inside the dashed region<br><i>or</i></p>
+            <input name="file" id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible form-control" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
+            <label class="btn btn-outline-dark btn-upload form-label" for="upload_image_background">Choose file(s)</label>
+            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+            <button type="submit" class="btn btn-lg btn-dark">Extract Text From Image</button>
+          </fieldset>
+        </form>
+      </div>
+      <div id="result-container" class="pt-5 mb-3 d-none">
+        <label for="exampleFormControlTextarea1" class="form-label">
+          <h3>Extracted Text</h3>
+        </label>
+        <textarea class="form-control text-center" id="exampleFormControlTextarea1" cols="50" rows="10" readonly></textarea>
+      </div>
+    </div>
+  </section>
+
+  <svg style="display:none">
+    <defs>
+      <symbol id="icon-imageUpload" clip-rule="evenodd" viewBox="0 0 96 96">
+        <path d="M47 6a21 21 0 0 0-12.3 3.8c-2.7 2.1-4.4 5-4.7 7.1-5.8 1.2-10.3 5.6-10.3 10.6 0 6 5.8 11 13 11h12.6V22.7l-7.1 6.8c-.4.3-.9.5-1.4.5-1 0-2-.8-2-1.7CSS (styles.css):
+
